@@ -1,6 +1,10 @@
 {
   "name": "genlink",
   "version": "1.0.0",
+  "files": [
+    "lib",
+    "README.md"
+  ],
   "scripts": {
     "build:watch": "tsc --watch",
     "build": "tsc"

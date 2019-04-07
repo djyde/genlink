@@ -30,9 +30,8 @@ export default async function main (options: Options) {
   const permalink = options.permalink || '/'
   const outDirRoot = options.outDir || process.cwd()
   const outDir = path.join(outDirRoot, permalink)
-  // create path
+
   await fs.ensureDir(outDir)
-  console.log('created root')
 
   try {
     await Promise.all(templates.map(async template => {
@@ -43,6 +42,4 @@ export default async function main (options: Options) {
   } catch (e) {
     console.log(e)
   }
-
-  console.log('done')
 }
