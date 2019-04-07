@@ -1,6 +1,8 @@
 [![AhO39A.md.png](https://s2.ax1x.com/2019/04/07/AhO39A.png)](https://imgchr.com/i/AhO39A)
 
 [![](https://badgen.net/npm/v/genlink)](https://npm.im/genlink)
+[![](https://badgen.net/npm/dt/genlink)](https://npm.im/genlink)
+![](https://circleci.com/gh/djyde/genlink.svg?style=shield)
 
 Generate redirect link (in static way)
 
