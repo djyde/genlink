@@ -1,4 +1,4 @@
-[![AhO39A.md.png](https://s2.ax1x.com/2019/04/07/AhO39A.md.png)](https://imgchr.com/i/AhO39A)
+[![AhO39A.md.png](https://s2.ax1x.com/2019/04/07/AhO39A.png)](https://imgchr.com/i/AhO39A)
 
 Generate redirect link (in static way)
 
