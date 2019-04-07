@@ -4,7 +4,7 @@ Generate redirect link (in static way)
 
 ## Install
 
-```
+```bash
 $ npm i genlink -g
 
 # or using in project only
@@ -28,9 +28,7 @@ $ npm i genlink --save-dev
 ]
 ```
 
-And run:
-
-```
+```bash
 $ genlink links.json
 ```
 
@@ -45,9 +43,9 @@ genlink will read the json file and generate static page at current word directo
 
 When you host in a static server (like `localhost:3000`), you can access these url like:
 
-```
-http://localhost:3000/my-blog // redirect to https://lutaonan.com
-http://localhost:3000/my-github // redirect to https://github.com/djyde
+```bash
+http://localhost:3000/my-blog # redirect to https://lutaonan.com
+http://localhost:3000/my-github # redirect to https://github.com/djyde
 ```
 
 ### permalink
