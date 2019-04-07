@@ -53,7 +53,7 @@ http://localhost:3000/my-github // redirect to https://github.com/djyde
 ### permalink
 
 ```
-$ genlink liks.json --permalink /click
+$ genlink links.json --permalink /click
 ```
 
 generate:
