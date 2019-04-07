@@ -1,5 +1,7 @@
 [![AhO39A.md.png](https://s2.ax1x.com/2019/04/07/AhO39A.png)](https://imgchr.com/i/AhO39A)
 
+[![](https://badgen.net/npm/v/genlink)](https://npm.im/genlink)
+
 Generate redirect link (in static way)
 
 ## Install
@@ -66,9 +68,9 @@ generate:
 
 access by:
 
-```
-http://localhost:3000/click/my-blog // redirect to https://lutaonan.com
-http://localhost:3000/click/my-github // redirect to https://github.com/djyde
+```bash
+http://localhost:3000/click/my-blog # redirect to https://lutaonan.com
+http://localhost:3000/click/my-github # redirect to https://github.com/djyde
 ```
 
 # License
