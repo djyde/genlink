@@ -18,12 +18,12 @@ $ npm i genlink --save-dev
 // links.json
 [
   {
-    name: "my-blog",
-    url: "https://lutaonan.com"
+    "name": "my-blog",
+    "url": "https://lutaonan.com"
   },
   {
-    name: "my-github",
-    url: "https://github.com/djyde"
+    "name": "my-github",
+    "url": "https://github.com/djyde"
   }
 ]
 ```
