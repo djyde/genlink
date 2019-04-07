@@ -1,5 +1,5 @@
 {
-  "name": "relink",
+  "name": "genlink",
   "version": "1.0.0",
   "scripts": {
     "build:watch": "tsc --watch",
