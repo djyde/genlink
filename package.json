@@ -10,6 +10,7 @@
   "scripts": {
     "build:watch": "tsc --watch",
     "build": "tsc",
+    "test": "jest",
     "prepublish": "npm run build",
     "test:cli": "genlink test/links.test.json --outDir test/tmp --permalink /click"
   },
@@ -19,6 +20,8 @@
   },
   "devDependencies": {
     "@types/node": "^11.13.0",
+    "file-test": "^1.0.0",
+    "jest": "^24.7.1",
     "typescript": "^3.4.2"
   }
 }
