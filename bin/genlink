@@ -1,0 +1,25 @@
+#!/usr/bin/env node
+
+const genlink = require('../lib').default
+const path = require('path')
+
+require('yargs')
+  .option('p', {
+    alias: 'permalink',
+    default: '/'
+  })
+  .option('o', {
+    alias: 'outDir',
+    default: process.cwd()
+  })
+  .command('$0 <file>', 'Generate redirect link', ({ argv }) => {
+    const filename = argv._[0]
+    genlink({
+      links: require(path.resolve(process.cwd(), filename)),
+      permalink: argv.permalink,
+      outDir: argv.outDir
+    })
+
+  })
+  .help()
+  .argv

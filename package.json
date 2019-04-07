@@ -3,14 +3,18 @@
   "version": "1.0.0",
   "files": [
     "lib",
+    "bin",
     "README.md"
   ],
+  "bin": "bin/genlink",
   "scripts": {
     "build:watch": "tsc --watch",
-    "build": "tsc"
+    "build": "tsc",
+    "test:cli": "genlink test/links.test.json --outDir test/tmp --permalink /click"
   },
   "dependencies": {
-    "fs-extra": "^7.0.1"
+    "fs-extra": "^7.0.1",
+    "yargs": "^13.2.2"
   },
   "devDependencies": {
     "@types/node": "^11.13.0",
