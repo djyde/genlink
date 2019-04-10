@@ -10,9 +10,10 @@ type Options = {
   links: Link[],
   permalink?: string,
   outDir?: string,
+  legacy?: boolean
 }
 
-const tpl = url => `<html>
+const legacyTpl = url => `<html>
   <head>
     <script>window.location.replace('${url}')</script>
     </script>
@@ -21,15 +22,21 @@ const tpl = url => `<html>
 </html>
 `
 
+const tpl = url => `<meta http-equiv="refresh" content="0; url='${url}'">`
+
 export default async function main (options: Options) {
-  const templates = options.links.map(link => ({
-    name: link.name,
-    htmlString: tpl(link.url)
-  }))
 
   const permalink = options.permalink || '/'
   const outDirRoot = options.outDir || process.cwd()
   const outDir = path.join(outDirRoot, permalink)
+  const isLegacy = options.legacy === true
+
+  console.log(isLegacy)
+
+  const templates = options.links.map(link => ({
+    name: link.name,
+    htmlString: isLegacy ? legacyTpl(link.url) : tpl(link.url)
+  }))
 
   await fs.ensureDir(outDir)
 

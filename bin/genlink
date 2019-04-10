@@ -12,6 +12,12 @@ require('yargs')
     alias: 'outDir',
     default: process.cwd()
   })
+  .options('l', {
+    alias: 'legacy',
+    default: false,
+    description: 'Use JavaScript instead of <meta>',
+    type: 'boolean'
+  })
   .command('$0 <file>', 'Generate redirect link', ({ argv }) => {
     const filename = argv._[0]
     genlink({
